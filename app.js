@@ -3,6 +3,8 @@ var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 var sassMiddleware = require('node-sass-middleware');
 
 // importing files
