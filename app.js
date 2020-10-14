@@ -8,7 +8,8 @@ const bodyParser = require('body-parser')
 var sassMiddleware = require('node-sass-middleware');
 
 // importing files
-var indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index');
+const bookmarkRouter = require('./routes/bookmarks');
 
 // Define Global Variables
 const app = express();
@@ -39,6 +40,7 @@ app.use(sassMiddleware({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', indexRouter);
+app.use('/api', indexRouter);
+app.use('/bookmark', bookmarkRouter);
 
 module.exports = app;

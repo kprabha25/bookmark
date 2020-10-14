@@ -6,7 +6,9 @@ let bookmarkSchema = new Schema({
     "url" : String,
     "notes" : String,
     "domain" : String,
-    "status" : Boolean
+    "status" : Boolean,
+    "created_at": Date,
+    "updated_at": Date
 })
 
 const Bookmark = mongoose.model('Bookmark', bookmarkSchema);
