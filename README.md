@@ -13,4 +13,15 @@ This is a Demo Bookmark App
   nodemon --ignore lib/app.js  
   nodemon --ignore 'lib/*.js'  
 
-  //http://localhost:5000/bookmarks
+  http://localhost:5000/bookmarks
+
+{
+  category
+  url
+  notes
+  domain
+  status
+  created_at
+  updated_at
+}
+  
