@@ -9,7 +9,6 @@ var sassMiddleware = require('node-sass-middleware');
 
 // importing files
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 // Define Global Variables
 const app = express();
@@ -41,6 +40,5 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 module.exports = app;
